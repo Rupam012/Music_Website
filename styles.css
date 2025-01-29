@@ -1,0 +1,546 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* navbar */
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(18, 18, 30);
+    color: white;
+    height: 4rem;
+    position: sticky;
+}
+
+.container .logo {
+    padding: 2rem 3rem;
+    margin: -1.5rem;
+}
+
+.container .logo img {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.container .navbar {
+    display: flex;
+    margin: 1.5rem -3.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container .navbar li {
+    align-items: center;
+    padding: 1rem 1rem;
+    list-style: none;
+}
+
+.container .navbar li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.container .navbar li a:hover {
+    color: gray;
+}
+
+.container .search-bar {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: -0.1rem;
+    right: 15rem;
+    margin: 1rem 5rem;
+}
+
+.container .search-bar #search {
+    display: flex;
+    text-align: center;
+    border-radius: 9px;
+    width: 21rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    border: 2px solid white;
+
+}
+
+.container .search-bar .search-bottom {
+    background-color: white;
+    color: gray;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    width: 4rem;
+    justify-content: center;
+}
+
+.container .search-bar .search-bottom:hover {
+    background-color: gray;
+    color: black;
+}
+
+.container .sign-up-page {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .sign-up-page .login-option {
+    list-style: none;
+}
+
+.container .sign-up-page .login-option a {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.container .sign-up-page .login-option a:hover {
+    background-color: rgb(25, 25, 44);
+    color: red;
+}
+
+/* photos section */
+
+#photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    margin: 1rem;
+    color: white;
+    text-shadow: 0.3rem 0.1rem rgb(15, 28, 27);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#photo .image {
+    display: flex;
+    height: 25vh;
+    width: 17rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-top: -5rem;
+    box-shadow: 0.3rem 0.3rem 0.2rem rgb(0, 0, 0);
+}
+
+#photo::before {
+    content: "";
+    position: absolute;
+    background: url(pexels-sebastian-ervi-1763075.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 210vh;
+    z-index: -1;
+    opacity: 0.89
+}
+
+#photo #arijit {
+    position: absolute;
+    top: 17rem;
+    left: 15rem;
+    transition-property: all;
+}
+
+#photo #arijit:hover {
+    transform: scale(0.9);
+}
+
+#photo #anupam {
+    position: absolute;
+    top: 17rem;
+    left: 33rem;
+    transition-property: all;
+}
+
+#photo #anupam:hover {
+    transform: scale(0.9);
+}
+
+#photo #irfan {
+    position: absolute;
+    top: 17rem;
+    left: 51rem;
+    transition-property: all;
+}
+
+#photo #irfan:hover {
+    transform: scale(0.9);
+}
+
+#photo #raj-barman {
+    position: absolute;
+    top: 30rem;
+    left: 15rem;
+    transition-property: all;
+}
+
+#photo #raj-barman:hover {
+    transform: scale(0.9);
+}
+
+#photo #kk {
+    position: absolute;
+    top: 30rem;
+    left: 33rem;
+    transition-property: all;
+}
+
+#photo #kk:hover {
+    transform: scale(0.9);
+}
+
+#photo #rupam-islam {
+    position: absolute;
+    top: 30rem;
+    left: 51rem;
+    transition-property: all;
+}
+
+#photo #rupam-islam:hover {
+    transform: scale(0.9);
+}
+
+#photo #sonu-nigam {
+    position: absolute;
+    top: 43rem;
+    left: 15rem;
+    transition-property: all;
+}
+
+#photo #sonu-nigam:hover {
+    transform: scale(0.9);
+}
+
+#photo #honey-singh {
+    position: absolute;
+    top: 43rem;
+    left: 33rem;
+    transition-property: all;
+}
+
+#photo #honey-singh:hover {
+    transform: scale(0.9);
+}
+
+#photo #pritam {
+    position: absolute;
+    top: 43rem;
+    left: 51rem;
+    transition-property: all;
+}
+
+#photo #pritam:hover {
+    transform: scale(0.9);
+}
+
+/* music potion */
+#music-heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 47rem;
+    background-color: #20061e;
+    color: white;
+    width: 20rem;
+    border-radius: 2rem;
+    margin-left: 37.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.music-box {
+    margin-top: -2rem;
+}
+
+.music {
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-color: #20061e;
+}
+
+.music .india-music {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 24rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 223, 223);
+    border: 2px solid brown;
+    border-radius: 11px;
+    margin: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.7rem brown;
+    cursor: pointer;
+    transition: all;
+}
+
+.music .india-music:hover {
+    transform: scale(1.1);
+}
+
+.music .india-music p {
+    font-size: 3rem;
+    margin-top: -2rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0.1rem 0.2rem orange;
+}
+
+.music .india-music img {
+    width: 20rem;
+    height: 17rem;
+    margin-top: -2rem;
+}
+
+
+/* about us */
+
+
+#about-us {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #20061e;
+    margin-top: 0.1rem;
+}
+
+#about-us .about-us-heading {
+    font-size: 5rem;
+    margin-top: -0.1rem;
+    color: yellow;
+    text-shadow: 0.2rem 0.2rem 3rem yellow;
+}
+
+#about-us .about-us-paragraph {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -2rem;
+    width: 70rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+}
+
+
+/* my music portion */
+
+#my-music {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.7rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#my-music::before {
+    content: "";
+    position: absolute;
+    background: url('pexels-caleb-oquendo-17120500.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    margin-top: 0.1rem;
+}
+
+#my-music .rupam-music {
+    display: flex;
+    align-items: center;
+    background-color: rgb(82, 80, 80);
+    color: white;
+    width: 30rem;
+}
+
+#my-music .rupam-music img {
+    height: 10rem;
+    width: 10rem;
+}
+
+#my-music .rupam-music #new-image {
+    height: 7rem;
+    width: 7rem;
+    padding-left: 2rem;
+    margin-top: -3rem;
+}
+
+#my-music .rupam-music .music-paragraph {
+    padding-left: 1rem;
+    margin-top: -2.1rem;
+}
+
+#my-music .rupam-music .music-paragraph button {
+    cursor: pointer;
+}
+
+#my-music .rupam-music .music-paragraph #rupam {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+#my-music .rupam-music .music-paragraph p {
+    font-size: 1.5rem;
+    margin-top: -2rem;
+}
+
+#my-music .rupam-paragraph {
+    background-color: rgb(13, 13, 13);
+    color: white;
+    width: 30rem;
+}
+
+#my-music .rupam-paragraph .para {
+    display: flex;
+    padding-left: 2rem;
+}
+
+#my-music .rupam-paragraph .para:hover {
+    background-color: white;
+    color: black;
+}
+
+#my-music .rupam-paragraph .para button {
+    height: 1.5rem;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+
+/* login-page */
+
+#login-page {
+    display: flex;
+    color: white;
+    margin-top: 1.8rem;
+}
+
+#login-page::before{
+    content: "";
+    position: absolute;
+    background: url('pexels-matteo-petralli-1772873.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#login-page .new-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-page .new-heading h1{
+    font-size: 5rem;
+    margin-top: -2rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem brown;
+}
+
+#login-page .new-heading p{
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    margin-left: 2rem;
+    width: 55rem;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.5rem brown;
+}
+
+#login-page .login-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    border: 2px solid yellow;
+    width: 25rem;
+    height: 30rem;
+    align-items: center;
+    background-color: rgb(227, 219, 219);
+    border-radius: 11px;
+    box-shadow: 0.2rem 0.2rem 1rem yellow;
+}
+
+#login-page .login-form h1{
+    color: rgb(51, 51, 181);
+    text-align: center;
+    font-size: 2rem;
+}
+
+#login-page .login-form .login{
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-page .login-form .login input{
+    width: 15rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    border-radius: 9px;
+    border: 2px solid black;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#login-page .login-form #submit{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    width: 15rem;
+    height: 1.8rem;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#login-page .login-form #submit:hover{
+    background-color: rgb(16, 15, 15);
+    color: red;
+}
+
+#login-page .login-form p{
+    font-size: 2rem;
+    color: black;
+    margin-top: 1rem;
+}
+
+#login-page .login-form #register{
+    margin-top: -1rem;
+    margin-left: 0.5rem;
+    width: 15rem;
+    height: 1.8rem;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#login-page .login-form #register:hover{
+    background-color: rgb(16, 15, 15);
+    color: red;
+}
